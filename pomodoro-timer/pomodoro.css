@@ -1,0 +1,100 @@
+body {
+  background-color: #d2d2d2;
+  font-family: "Inter", sans-serif;
+}
+
+#status {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  background-color: transparent;
+  top: 107px;
+  left: 30px;
+  z-index: 999;
+}
+
+.timerDisplay {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.buttonsContainer {
+  align-self: center;
+}
+.buttonsContainer .startBtn,
+.buttonsContainer .resetBtn {
+  border: 0;
+  background-color: linear-gradient(to right bottom, #fff0f0, #ffd2e0);
+  color: #ff6292;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.setWorkTimeContainer,
+.setBreakTimeContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  text-align: start;
+  justify-content: flex-start;
+}
+.setWorkTimeContainer .btn-settings,
+.setBreakTimeContainer .btn-settings {
+  border: 0;
+  background: linear-gradient(#fff0f0, #ffd2e0);
+  color: #ff6292;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  align-self: center;
+}
+.setWorkTimeContainer .setWorkMin,
+.setWorkTimeContainer .setBreakMin,
+.setWorkTimeContainer .setMinSettings,
+.setBreakTimeContainer .setWorkMin,
+.setBreakTimeContainer .setBreakMin,
+.setBreakTimeContainer .setMinSettings {
+  color: #ffffff;
+  font-weight: bold;
+  align-self: center;
+  margin: 0 4px;
+  font-size: 18px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 50px;
+  border: solid 4px #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.progressBar .progressBarFill {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 176, 217, 0.6));
+  left: 0;
+  position: relative;
+  transition: width 1s linear;
+  height: 100%;
+}
+
+.setTimerContainer {
+  display: block;
+  text-align: center;
+}
+
+.progressBarContainer {
+  text-align: center;
+}
+
+.containerFlex {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=pomodoro.css.map */

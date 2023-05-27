@@ -1,0 +1,45 @@
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pomodoro.scss" />
+    <link rel="" href="pomodoro.scss" />
+    <title>Pomodoro Timer by Cléo "Chii" Kozume</title>
+  </head>
+  <body>
+    <div class="pomodoroContainer">
+      <div class="containerFlex">
+        <div class="setTimerContainer">
+          <div class="setWorkTimeContainer">
+            <button class="btn-settings" id="work-plus">+</button>
+            <div class="setMinSettings">Work:</div>
+            <div class="setWorkMin">25</div>
+            <div class="setMinSettings">mins</div>
+            <button class="btn-settings" id="work-minus">-</button>
+          </div>
+          <div class="setBreakTimeContainer">
+            <button class="btn-settings" id="break-plus">+</button>
+            <div class="setMinSettings">Break:</div>
+            <div class="setBreakMin">5</div>
+            <div class="setMinSettings">mins </div>
+            <button class="btn-settings" id="break-minus">-</button>
+          </div>
+        </div>
+        <div class="buttonsContainer">
+          <button class="startBtn">Start</button>
+          <button class="resetBtn">Reset</button>
+        </div>
+        <div class="timerDisplay">00:00</div>
+      </div>
+
+      <div class="progressBarContainer">
+        <div id="status"></div>
+        <div class="progressBar" id="progressBar">
+          <div class="progressBarFill" style="width: 0"></div>
+        </div>
+      </div>
+    </div>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>

@@ -1,11 +1,17 @@
 'use client'
+import { useContext } from 'react'
 
+// COMPONENTS
+import { Navbar } from '@/components/Navbar/Navbar'
+import { Content } from '@/components/Content/Content'
+import { Footer } from '@/components/Footer/Footer'
+
+// CONTEXT
+import ThemeContext, { ThemeContextProvider } from '@/context/ThemeContext'
+
+// STYLES
 import './GlobalStyle.scss'
 import styles from './GlobalStyle.module.scss'
-
-import { Navbar } from '@/components/Navbar/Navbar'
-import ThemeContext, { ThemeContextProvider } from '@/context/ThemeContext'
-import { useContext } from 'react'
 
 export default function Home() {
   const WrappedApp = () => {
@@ -17,7 +23,7 @@ export default function Home() {
           isDark ? styles.themeDark : styles.themeLight
         ].join(' ')}
       >
-        <div>{isDark ? 'themeDark' : 'themeLight'}</div>
+        <Content />
       </div>
     )
   }
@@ -31,6 +37,9 @@ export default function Home() {
         <main>
           <WrappedApp />
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </ThemeContextProvider>
     </>
   )

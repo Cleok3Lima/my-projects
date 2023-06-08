@@ -9,6 +9,7 @@
   padding: 0 10px;
   width: 100%;
   max-width: 100vw;
+  z-index: 999;
 
   &__dark {
     background-color: $blue-700;

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chama-senha.css">
+  <title>Chamada de Senhas</title>
+</head>
+<body>
+  
+  <main>
+    <!-- TABS -->
+    <div class="tab">
+      <button class="tablinks" onclick="abreTratamento(event, 'Xama')">Xamã</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Terapeutica')">Terapeutica</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Reiki')">Reiki</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Iluminação')">Iluminação e Cura</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Sirius')">Sírius</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Chama')">Chama Trina</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Desobsessao')">Desobsessão</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Psicografia')">Psicografia</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'PasseVivencia')">Passe vivência</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Templarios')">Templários</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Atendimento')">Atendimento</button>
+      <button class="tablinks" onclick="abreTratamento(event, 'Passe')">Passe vivência 1,2,3</button>
+    </div>
+
+    <!-- XAMA TAB -->
+    <div id="Xama" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="xama">Xamã</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-xama">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-xama">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-xama" class="zerar">Zerar</button>
+            <input id="normal-calc-xama" type="number" name="normal-calc-xama">
+            <button id="sum-normal-xama">Somar</button>
+            <button id="sub-normal-xama">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade" class="senha prioridade prioridade-xama">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-xama">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-xama" class="zerar">Zerar</button>
+            <input id="preferencial-calc-xama" type="number" name="preferencial-calc-xama">
+            <button id="sum-preferencial-xama">Somar</button>
+            <button id="sub-preferencial-xama">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terapeutica TAB -->
+    <div id="Terapeutica" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="terapeutica">Terapeutica</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-terapeutica">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-terapeutica">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-terapeutica" class="zerar">Zerar</button>
+            <input id="normal-calc-terapeutica" type="number" name="normal-calc-terapeutica">
+            <button id="sum-normal-terapeutica">Somar</button>
+            <button id="sub-normal-terapeutica">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-terapeutica" class="senha prioridade prioridade-terapeutica">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-terapeutica">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-terapeutica" class="zerar">Zerar</button>
+            <input id="preferencial-calc-terapeutica" type="number" name="preferencial-calc-terapeutica">
+            <button id="sum-preferencial-terapeutica">Somar</button>
+            <button id="sub-preferencial-terapeutica">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reiki TAB -->
+    <div id="Reiki" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="reiki">Reiki</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-reiki">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-reiki">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-reiki" class="zerar">Zerar</button>
+            <input id="normal-calc-reiki" type="number" name="normal-calc-reiki">
+            <button id="sum-normal-reiki">Somar</button>
+            <button id="sub-normal-reiki">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-reiki" class="senha prioridade prioridade-reiki">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-reiki">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-reiki" class="zerar">Zerar</button>
+            <input id="preferencial-calc-reiki" type="number" name="preferencial-calc-reiki">
+            <button id="sum-preferencial-reiki">Somar</button>
+            <button id="sub-preferencial-reiki">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iluminação e Cura TAB -->
+    <div id="Iluminação" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="iluminacao">Iluminação e Cura</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-iluminacao">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-iluminacao">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-iluminacao" class="zerar">Zerar</button>
+            <input id="normal-calc-iluminacao" type="number" name="normal-calc-iluminacao">
+            <button id="sum-normal-iluminacao">Somar</button>
+            <button id="sub-normal-iluminacao">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-iluminacao" class="senha prioridade prioridade-iluminacao">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-iluminacao">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-iluminacao" class="zerar">Zerar</button>
+            <input id="preferencial-calc-iluminacao" type="number" name="preferencial-calc-iluminacao">
+            <button id="sum-preferencial-iluminacao">Somar</button>
+            <button id="sub-preferencial-iluminacao">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sírius TAB -->
+    <div id="Sirius" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="sirius">Sírius</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-sirius">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-sirius">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-sirius" class="zerar">Zerar</button>
+            <input id="normal-calc-sirius" type="number" name="normal-calc-sirius">
+            <button id="sum-normal-sirius">Somar</button>
+            <button id="sub-normal-sirius">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-sirius" class="senha prioridade prioridade-sirius">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-sirius">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-sirius" class="zerar">Zerar</button>
+            <input id="preferencial-calc-sirius" type="number" name="preferencial-calc-sirius">
+            <button id="sum-preferencial-sirius">Somar</button>
+            <button id="sub-preferencial-sirius">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chama Trina TAB -->
+    <div id="Chama" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="chama">Chama Trina</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-chama">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-chama">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-chama" class="zerar">Zerar</button>
+            <input id="normal-calc-chama" type="number" name="normal-calc-chama">
+            <button id="sum-normal-chama">Somar</button>
+            <button id="sub-normal-chama">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-chama" class="senha prioridade prioridade-chama">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-chama">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-chama" class="zerar">Zerar</button>
+            <input id="preferencial-calc-chama" type="number" name="preferencial-calc-chama">
+            <button id="sum-preferencial-chama">Somar</button>
+            <button id="sub-preferencial-chama">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desobsessão Trina TAB -->
+    <div id="Desobsessao" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="desobsessao">Desobsessão</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-desobsessao">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-desobsessao">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-desobsessao" class="zerar">Zerar</button>
+            <input id="normal-calc-desobsessao" type="number" name="normal-calc-desobsessao">
+            <button id="sum-normal-desobsessao">Somar</button>
+            <button id="sub-normal-desobsessao">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-desobsessao" class="senha prioridade prioridade-desobsessao">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-desobsessao">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-desobsessao" class="zerar">Zerar</button>
+            <input id="preferencial-calc-desobsessao" type="number" name="preferencial-calc-desobsessao">
+            <button id="sum-preferencial-desobsessao">Somar</button>
+            <button id="sub-preferencial-desobsessao">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Psicografia Trina TAB -->
+    <div id="Psicografia" class="tabcontent">
+      <div class="title">
+        <h1 id="tratamento" class="psicografia">Psicografia</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-psicografia">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-psicografia">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-psicografia" class="zerar">Zerar</button>
+            <input id="normal-calc-psicografia" type="number" name="normal-calc-psicografia">
+            <button id="sum-normal-psicografia">Somar</button>
+            <button id="sub-normal-psicografia">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-psicografia" class="senha prioridade prioridade-psicografia">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-psicografia">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-psicografia" class="zerar">Zerar</button>
+            <input id="preferencial-calc-psicografia" type="number" name="preferencial-calc-psicografia">
+            <button id="sum-preferencial-psicografia">Somar</button>
+            <button id="sub-preferencial-psicografia">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passe vivência TAB -->
+    <div id="PasseVivencia" class="tabcontent">
+      <div class="title">
+        <h1 id="passe-vivencia" class="passe-vivencia">Passe Vivência</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-passe-vivencia">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-passe-vivencia">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-passe-vivencia" class="zerar">Zerar</button>
+            <input id="normal-calc-passe-vivencia" type="number" name="normal-calc-passe-vivencia">
+            <button id="sum-normal-passe-vivencia">Somar</button>
+            <button id="sub-normal-passe-vivencia">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-passe-vivencia" class="senha prioridade prioridade-passe-vivencia">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-passe-vivencia">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-passe-vivencia" class="zerar">Zerar</button>
+            <input id="preferencial-calc-passe-vivencia" type="number" name="preferencial-calc-passe-vivencia">
+            <button id="sum-preferencial-passe-vivencia">Somar</button>
+            <button id="sub-preferencial-passe-vivencia">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Templários TAB -->
+    <div id="Templarios" class="tabcontent">
+      <div class="title">
+        <h1 id="templarios" class="templarios">Templários</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-templarios">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-templarios">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-templarios" class="zerar">Zerar</button>
+            <input id="normal-calc-templarios" type="number" name="normal-calc-templarios">
+            <button id="sum-normal-templarios">Somar</button>
+            <button id="sub-normal-templarios">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-templarios" class="senha prioridade prioridade-templarios">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-templarios">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-templarios" class="zerar">Zerar</button>
+            <input id="preferencial-calc-templarios" type="number" name="preferencial-calc-templarios">
+            <button id="sum-preferencial-templarios">Somar</button>
+            <button id="sub-preferencial-templarios">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Atendimento TAB -->
+    <div id="Atendimento" class="tabcontent">
+      <div class="title">
+        <h1 id="atendimento" class="atendimento">Atendimento</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-atendimento">
+          <h2>Senha</h2>
+          <span>até </span>
+          <p id="senha-normal-atendimento">N000</p>
+          
+          <div class="input">
+            <button id="zerar-normal-atendimento" class="zerar">Zerar</button>
+            <input id="normal-calc-atendimento" type="number" name="normal-calc-atendimento">
+            <button id="sum-normal-atendimento">Somar</button>
+            <button id="sub-normal-atendimento">Subtrair</button>
+          </div>
+        </div>
+        <div id="senha-tratamento-prioridade-atendimento" class="senha prioridade prioridade-atendimento">
+          <h2>Prioridade</h2>
+          <span>até </span>
+          <p id="senha-preferencial-atendimento">P000</p>
+          <div class="input">
+            <button id="zerar-preferencial-atendimento" class="zerar">Zerar</button>
+            <input id="preferencial-calc-atendimento" type="number" name="preferencial-calc-atendimento">
+            <button id="sum-preferencial-atendimento">Somar</button>
+            <button id="sub-preferencial-atendimento">Subtrair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passe vivência 1,2,3 TAB -->
+    <div id="Passe" class="tabcontent">
+      <div class="title">
+        <h1 id="passe" class="passe">Passe Vivência</h1>
+      </div>
+      <div class="senha-container">
+        <div id="senha-tratamento" class="senha senha-passe1">
+          <h2>Passe Vivência 1</h2>
+          <span>até </span>
+          <p id="senha-normal-passe1">N000</p>
+          
+          <div class="input input-passe">
+            <button id="zerar-normal-passe1" class="zerar">Zerar</button>
+            <input id="normal-calc-passe1" type="number" name="normal-calc-passe1">
+            <button id="sum-normal-passe1">Somar</button>
+            <button id="sub-normal-passe1">Subtrair</button>
+          </div>
+        </div>
+        <div class="senha-container">
+          <div id="senha-tratamento" class="senha senha-passe2">
+            <h2>Passe Vivência 2</h2>
+            <span>até </span>
+            <p id="senha-normal-passe2">N000</p>
+            
+            <div class="input input-passe">
+              <button id="zerar-normal-passe2" class="zerar">Zerar</button>
+              <input id="normal-calc-passe2" type="number" name="normal-calc-passe2">
+              <button id="sum-normal-passe2">Somar</button>
+              <button id="sub-normal-passe2">Subtrair</button>
+            </div>
+          </div>
+          <div class="senha-container">
+            <div id="senha-tratamento" class="senha senha-passe3">
+              <h2>Passe Vivência 3</h2>
+              <span>até </span>
+              <p id="senha-normal-passe3">N000</p>
+              
+              <div class="input input-passe">
+                <button id="zerar-normal-passe3" class="zerar">Zerar</button>
+                <input id="normal-calc-passe3" type="number" name="normal-calc-passe3">
+                <button id="sum-normal-passe3">Somar</button>
+                <button id="sub-normal-passe3">Subtrair</button>
+              </div>
+            </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="chama-senha.js"></script>
+  
+</body>
+</html>

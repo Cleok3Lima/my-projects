@@ -1,0 +1,460 @@
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main h1 {
+  font-size: 15rem;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.senha-container {
+  display: flex;
+  height: 60vh;
+  font-weight: 600;
+}
+
+.senha {
+  width: 50%;
+}
+
+.senha h2 {
+  font-size: 7rem;
+  margin: 1rem 2rem;
+
+  border-radius: 2.5rem;
+  padding: 0.8rem 2rem;
+}
+
+.prioridade {
+  color: white;
+}
+
+.senha p {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.senha span {
+  font-size: 5rem;
+  margin-left: 6rem;
+  top: 10.8rem;
+  position: relative;
+}
+
+.input {
+  text-align: right;
+  position: relative;
+  top: 3rem;
+  margin-right: 1rem;
+}
+
+.input :first-child {
+  float: left;
+  margin: 0 0 0 45%;
+}
+
+.input input {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+}
+
+.input button {
+  color: white;
+  cursor: pointer;
+  padding: 2px 0.5rem;
+  background-color: #556783;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.input button:active {
+  background-color: #111f35;
+}
+
+/* XAMA */
+.xama {
+  background-color: green;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+}
+
+.senha-xama {
+  background-color: rgb(180, 245, 180);
+}
+
+.senha-xama h2 {
+  background-color: rgb(81, 156, 81);
+}
+
+.prioridade-xama {
+  background-color: rgb(5, 82, 5);
+}
+
+.prioridade-xama h2 {
+  background-color: rgb(81, 156, 81);
+}
+
+/* TERAPEUTICA */
+.terapeutica {
+  background-color: red;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+}
+
+.senha-terapeutica {
+  background-color: rgb(245, 180, 180);
+}
+
+.senha-terapeutica h2 {
+  background-color: rgb(156, 81, 81);
+}
+
+.prioridade-terapeutica {
+  background-color: rgb(82, 5, 5);
+}
+
+.prioridade-terapeutica h2 {
+  background-color: rgb(156, 81, 81);
+}
+
+/* REIKI */
+.reiki {
+  background-color: rgb(255, 42, 142);
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+}
+
+.senha-reiki {
+  background-color: rgb(247, 161, 201);
+}
+
+.senha-reiki h2 {
+  background-color: rgb(163, 74, 116);
+}
+
+.prioridade-reiki {
+  background-color: rgb(136, 13, 70);
+}
+
+.prioridade-reiki h2 {
+  background-color: rgb(163, 74, 116);
+}
+
+/* ILUMINAÇÃO E CURA */
+.iluminacao {
+  font-size: 12rem;
+  background-color: blue;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.senha-iluminacao {
+  background-color: rgb(180, 180, 245);
+}
+
+.senha-iluminacao h2 {
+  background-color: rgb(81, 81, 156);
+}
+
+.prioridade-iluminacao {
+  background-color: rgb(5, 5, 82);
+}
+
+.prioridade-iluminacao h2 {
+  background-color: rgb(81, 81, 156);
+}
+
+/* SÍRIUS */
+.sirius {
+  font-size: 12rem;
+  background-color: rgb(132, 0, 255);
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.senha-sirius {
+  background-color: rgb(214, 180, 245);
+}
+
+.senha-sirius h2 {
+  background-color: rgb(120, 81, 156);
+}
+
+.prioridade-sirius {
+  background-color: rgb(41, 5, 82);
+}
+
+.prioridade-sirius h2 {
+  background-color: rgb(120, 81, 156);
+}
+
+/* CHAMA TRINA */
+.chama {
+  font-size: 12rem;
+  background-color: orangered;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.senha-chama {
+  background-color: rgb(243, 151, 118);
+}
+
+.senha-chama h2 {
+  background-color: rgb(158, 87, 59);
+}
+
+.prioridade-chama {
+  background-color: rgb(155, 43, 3);
+}
+
+.prioridade-chama h2 {
+  background-color: rgb(158, 87, 59);
+}
+
+/* DESOBSESSÃO */
+.desobsessao {
+  font-size: 12rem;
+  background-color: #e002fd;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.senha-desobsessao {
+  background-color: #ed7bfc;
+}
+
+.senha-desobsessao h2 {
+  background-color: #9d38aa;
+}
+
+.prioridade-desobsessao {
+  background-color: #650172;
+}
+
+.prioridade-desobsessao h2 {
+  background-color: #9d38aa;
+}
+
+/* PSICOGRAFIA */
+.psicografia {
+  background-color: green;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+}
+
+.senha-psicografia {
+  background-color: rgb(180, 245, 180);
+}
+
+.senha-psicografia h2 {
+  background-color: rgb(81, 156, 81);
+}
+
+.prioridade-psicografia {
+  background-color: rgb(5, 82, 5);
+}
+
+.prioridade-psicografia h2 {
+  background-color: rgb(81, 156, 81);
+}
+
+/* PASSE VIVENCIA */
+.passe-vivencia {
+  background-color: rgb(202, 233, 243);
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+}
+
+.senha-passe-vivencia {
+  background-color: rgb(223, 239, 245);
+}
+
+.senha-passe-vivencia h2 {
+  background-color: rgb(145, 180, 192);
+}
+
+.prioridade-passe-vivencia {
+  background-color: rgb(86, 119, 129);
+}
+
+.prioridade-passe-vivencia h2 {
+  background-color: rgb(145, 180, 192);
+}
+
+/* TEMPLÁRIOS */
+.templarios {
+  font-size: 12rem;
+  background-color: blue;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.senha-templarios {
+  background-color: rgb(180, 180, 245);
+}
+
+.senha-templarios h2 {
+  background-color: rgb(81, 81, 156);
+}
+
+.prioridade-templarios {
+  background-color: rgb(5, 5, 82);
+}
+
+.prioridade-templarios h2 {
+  background-color: rgb(81, 81, 156);
+}
+
+/* ATENDIMENTO */
+.atendimento {
+  font-size: 12rem;
+  background-color: yellow;
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.senha-atendimento {
+  background-color: rgb(253, 253, 185);
+}
+
+.senha-atendimento h2 {
+  background-color: rgb(204, 204, 83);
+}
+
+.prioridade-atendimento {
+  background-color: rgb(190, 187, 4);
+}
+
+.prioridade-atendimento h2 {
+  background-color: rgb(204, 204, 83);
+}
+
+/* PASSE 1 2 3 */
+.passe {
+  font-size: 12rem;
+  background-color: rgb(145, 180, 192);
+  color: white;
+  text-shadow: 2px 2px 5px #2d2d2d;
+  padding: 2.85rem 0;
+}
+
+.input-passe {
+  top: 10rem;
+}
+
+.input-passe :first-child {
+  margin: 0 0 0 1rem;
+}
+
+.senha-passe1 {
+  background-color: #ed7bfc;
+  width: unset;
+}
+
+.senha-passe1 span {
+  font-size: 4rem;
+  margin-left: 3rem;
+  top: 8.7rem;
+}
+
+.senha-passe1 p {
+  font-size: 8rem;
+  margin-left: 5rem;
+}
+
+.senha-passe1 h2 {
+  background-color: #b544c4;
+  font-size: 3.77rem;
+}
+
+.senha-passe2 {
+  background-color: rgb(180, 245, 180);
+  width: unset;
+}
+
+.senha-passe2 span {
+  font-size: 4rem;
+  margin-left: 3rem;
+  top: 8.7rem;
+}
+
+.senha-passe2 p {
+  font-size: 8rem;
+  margin-left: 5rem;
+}
+
+.senha-passe2 h2 {
+  background-color: rgb(81, 156, 81);
+  font-size: 3.77rem;
+}
+
+.senha-passe3 {
+  background-color: rgb(223, 239, 245);
+  width: unset;
+}
+
+.senha-passe3 span {
+  font-size: 4rem;
+  margin-left: 3rem;
+  top: 8.7rem;
+}
+
+.senha-passe3 p {
+  font-size: 8rem;
+  margin-left: 5rem;
+}
+
+.senha-passe3 h2 {
+  background-color: rgb(145, 180, 192);
+  font-size: 3.77rem;
+}
